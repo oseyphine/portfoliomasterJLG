@@ -13,22 +13,50 @@ hr{
 	height: 1px;
 	background: orange;
 }
-/*HEADER*/
-
-nav ul li{
-	display: inline-block;
+.color-primaire{
+	color: orange;
+}
+.navbar{
+	background: white;
+    filter: opacity(85%);
+	border: transparent solid 1px;
+}
+nav ul li a{
 	margin: 20px 10px;
+	color: pink;
+
+}
+.navbar-default .navbar-nav>li>a{
+	color: orange;
 	font-weight: bold;
+}
+/*HEADER*/
+/*JUMBOTRON*/
+.jumbotron{
+	color: white;
+	background: url('../images/photo/indianoceanmap.jpg') no-repeat fixed right center;
+	background-size: cover;
+    filter: opacity(95%);
+    padding: 80px auto;
+    margin-top: 92px;
 }
 
 /*ABOUT ME*/
-
+.avatar{
+	width: 50%;
+	height: 50%;
+}
 /*About me/Jumbotron*/
 
 /*Education*/
-
+.img-education{
+	width: 200px;
+}
 /*Expériences*/
-
+.img-experiences{
+	width: 150px;
+	margin-top: 40px;
+}
 /*Competences IT*/
 
 /*PORTFOLIO*/

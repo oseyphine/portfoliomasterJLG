@@ -24,7 +24,7 @@
 
                     <div class="collapse navbar-collapse navbar-collapse-1">
                         <ul class="nav navbar-nav" id="main-menu">
-                            <li class="fond-transparent"><a href="#accueil"><i class="fa fa-home"></i> HOME</a></li>
+                            <li class="fond-transparent"><a href="#home"><i class="fa fa-home"></i> HOME</a></li>
                             <li><a href="#profil"><i class="fa fa-user"></i> ABOUT_ME</a></li>
                             <li><a href="#educations"><i class="fa fa-graduation-cap"></i> EDUCATIONS</a></li>
                             <li><a href="#experiences"><i class="fa fa-globe"></i> EXPERIENCES</a></li>
@@ -37,7 +37,7 @@
                     <div id="sidebar-wrapper" class="visible-xs visible-sm visible-md">
                         <nav class="navbar-collapse-1">
                             <ul class="sidebar-nav nav">
-                                <li><a href="#accueil"><i class="fa fa-home"></i> HOME</a></li>
+                                <li><a href="#home"><i class="fa fa-home"></i> HOME</a></li>
                                 <li><a href="#profil"><i class="fa fa-user"></i> ABOUT_ME</a></li>
                                 <li><a href="#educations"><i class="fa fa-graduation-cap"></i> EDUCATIONS</a></li>
                                 <li><a href="#experiences"><i class="fa fa-globe"></i> EXPERIENCES</a></li>
@@ -49,25 +49,22 @@
                     </div>
                 </div>
             </nav>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-			<header>			
+        </div>
+    </div>
+			<header id="home">			
 				<div class="jumbotron">
-					<h1>Joséphine LE GLEUT</h1>
-					<p>Apprentie Développeuse Web fullstack JS Jr. | Master Management & Ingénierie du Tourisme </p>
-					<p>#GirlinTech #IslandGirl #BusinessWoman #Simplonienne #IAEFRANCE #IAE REUNION #GotoReunion #SLaF</p>
-					<p>Florebo quocumque ferar._Devise de La Réunion </p>
-					<p>Smile Like a Flower - Life philosophy</p>
+					<div class="jumbotron-text">
+						<h1>Joséphine LE GLEUT</h1>
+						<p>Apprentie Développeuse Web fullstack JS Jr. | Master Management & Ingénierie du Tourisme </p>
+						<p>Florebo quocumque ferar._Devise de La Réunion </p>
+						<p>Smile Like a Flower - Life philosophy</p>
+						<br/>
+						<p>#GirlinTech #IslandGirl #BusinessWoman #Simplonienne #IAEFRANCE #IAE REUNION #GotoReunion #SLaF</p>
+					</div>
 				</div>							
 			</header>
 <hr>
-			<section class="about_me">
+			<section class="about_me" id="profil">
 				<div class="container">
 					<div class="container-fluid">
 						<div class="row text-center">
@@ -81,23 +78,28 @@
 				        </div>
 				        <div class="row">
 			                <div class="col-md-6">
-			                	<img class="img-responsive center-block img-circle" src="./images/photo/joepapaye.jpg" alt="Joe">			                        
+			                	<img class="img-responsive center-block img-circle avatar" src="./images/photo/joepapaye.jpg" alt="Joe">			                        
 			                </div>
 
 			                <div class="col-md-6">
 			                    <p class="text-justify">
-			                    	<p class="MsoNormal text-left">Enchantée, je suis Joséphine LE GLEUT, j'ai 24 ans et j'effectue actuellement une formation de développeuse web fullstack Junior avec <a href="http://simplonreunion.co/formation-informatique/developpeur-web" target="_blank" rel="noopener noreferrer">Simplon Réunion</a>.
-			                    	<br/>
-									Tourisme, Numérique & Innovation sont mes trois "nouveaux" piliers de choc !
-									~avec Environnement, Écologie & Développement Durable bien sûre~
-			                    	<br/>
-									Autres mots clés/thèmes qui me sont chers : l'auberge de jeunesse dynamique, les évènements (calendrier) et la cartographie !	
-			                    	 par les nouvelles technologies et l'informatique en g&eacute;n&eacute;ral. Vous retrouverez sur ce site mes travaux.
-			                    	 Vous êtes chaleureusement inviter à la <code>section</code> <a href="#contact">CONTACT_ME</a> pour me joindre.
-			                    	 </p>
+			                    	<p class="MsoNormal text-left">
+			                    		Enchantée, je suis Joséphine LE GLEUT, j'ai 24 ans et j'effectue actuellement une formation de développeuse web fullstack Junior avec <a href="http://simplonreunion.co/formation-informatique/developpeur-web" target="_blank" rel="noopener noreferrer">Simplon Réunion</a>.
+			                    		<br/>
+			                    		<br/>
+										Tourisme, Numérique & Innovation sont mes trois "nouveaux" piliers de choc !
+			                    		<br/>
+			                    		<br/>
+										~avec Environnement, Écologie & Développement Durable bien sûre~
+			                    		<br/>
+			                    		<br/>
+										Autres mots clés/thèmes qui me sont chers : l'auberge de jeunesse dynamique, les évènements (calendrier) et la cartographie !
+			                    		<br/>											
+			                    		Vous êtes chaleureusement invités à consulter mes travaux à la <code>section</code> <a href="#portfolio">PORTFOLIO</a> & à la <code>section</code> <a href="#contact">CONTACT_ME</a> pour me joindre.
+			                    	</p>
 			                    </p>
 			                    <p class="text-center">
-			                    	<a class="btn btn-default cv" href="#" target="_blank" role="button">Voir mon CV</a>
+			                    	<a class="btn btn-default cv" href="./images/cv.jpg" target="_blank" role="button"> Mon CV</a>
 			                    </p>
                 			</div>
             			</div>
@@ -106,7 +108,7 @@
 			</section>
 <hr>
 <!-- 			<section class="educations">
- -->			<section id="formation" class="espace-bloc">
+ -->			<section class="espace-bloc" id="educations">
 				    <div class="container" data-wow-duration="0.5s">
 				        <div class="row text-center">
 				            <div class="col-md-12">
@@ -132,13 +134,13 @@
 
 			                <div class="col-md-4">
  			                	<!--class="img-responsive img-thumbnail center-block hidden-xs hidden-sm"-->
- 			                    <img class="img-responsive img-thumbnail center-block hidden-xs hidden-sm" src="./images/entité/simplon-reunion.png" alt="Développeur Web Jr. w/ Simplon Réunion">				                            
+ 			                    <img class="img-education img-responsive img-rounded center-block hidden-xs hidden-sm" src="./images/entité/simplon-reunion.png" alt="Développeur Web Jr. w/ Simplon Réunion">				                            
 			                </div>				                
 			            </div>
 			                    
 			            <div class="row espace-formation">
 			                <div class="col-md-offset-4 col-md-4">
-			                    <img class="img-responsive img-thumbnail center-block hidden-xs hidden-sm" src="./images/entité/iaereunion.png" alt="Master MIT w/ IAE REUNION">
+			                    <img class="img-education img-responsive img-rounded center-block hidden-xs hidden-sm" src="./images/entité/iaereunion.png" alt="Master MIT w/ IAE REUNION">
 			                </div>
 
 			                <div class="col-md-4 text-left">
@@ -166,13 +168,13 @@
 			                </div>
 
 			                <div class="col-md-4">
-			                    <img class="img-responsive img-thumbnail center-block hidden-xs hidden-sm" src="./images/entité/iaereunion.png" alt="Licence 3 GAT w/ IAE REUNION">
+			                    <img class="img-education img-responsive img-rounded center-block hidden-xs hidden-sm" src="./images/entité/iaereunion.png" alt="Licence 3 GAT w/ IAE REUNION">
 			                </div>				                
 			            </div>
 			                    
 			            <div class="row espace-formation">
 			                <div class="col-md-offset-4 col-md-4">
-			                    <img class="img-responsive img-thumbnail center-block hidden-xs hidden-sm" src="./images/entité/LPHLR.png" alt="Licence 1 - Mathématique Informatique Physique">				                            
+			                    <img class="img-education img-responsive img-rounded center-block hidden-xs hidden-sm" src="./images/entité/LPHLR.png" alt="Licence 1 - Mathématique Informatique Physique">				                            
 			                </div>
 
 		                    <div class="col-md-4 text-left">
@@ -198,13 +200,13 @@
 		                    </div>
 
 			                <div class="col-md-4">
-			                    <img class="img-responsive img-thumbnail center-block hidden-xs hidden-sm" src="./images/entité/LPHLR.png" alt="Licence 1 - Mathématique Informatique Physique">				                            
+			                    <img class="img-education img-responsive img-rounded center-block hidden-xs hidden-sm" src="./images/entité/LPHLR.png" alt="Licence 1 - Mathématique Informatique Physique">				                            
 			                </div>				                
 			            </div>
 			                    
 			            <div class="row espace-formation">
 			                <div class="col-md-offset-4 col-md-4">
-			                    <img class="img-responsive img-thumbnail center-block hidden-xs hidden-sm" src="./images/entité/lyceepossession.jpg" alt="Diplôme National du Brevet">				                            
+			                    <img class="img-education img-responsive img-rounded center-block hidden-xs hidden-sm" src="./images/entité/lyceepossession.jpg" alt="Diplôme National du Brevet">				                            
 			                </div>
 
 		                    <div class="col-md-4 text-left">
@@ -221,22 +223,139 @@
 				</section>	
 <!-- 			</section>
  --><hr>
-			<section class="experiences">
+			<section class="experiences" id="experiences">
 				<div class="container">
 					<div class="container-fluid">
 						<div class="row text-center">
-						            <div class="col-md-12">
-						            	<i class="fa fa-globe fa-4x" aria-hidden="true"></i>
-						                <h2>
-						                    <span class="color-primaire chevron">&lt;</span>
-						                    EXPERIENCES <span class="color-primaire">/</span><span class="color-primaire chevron">&gt;</span>
-						                </h2>
-						            </div>
-						        </div>					</div>
-						</div>				
+				        	<div class="col-md-12">
+				            	<i class="fa fa-globe fa-4x" aria-hidden="true"></i>
+				            	<h2>
+				                    <span class="color-primaire chevron">&lt;</span>
+				                    EXPERIENCES <span class="color-primaire">/</span>
+				                    <span class="color-primaire chevron">&gt;</span>
+				                </h2>
+				        	</div>
+				        </div>
+			            <div class="row espace-formation">
+			                <div class="col-md-4 text-right">
+			                    <h3><i class="fa fa-calendar" style="margin-right:5px;"></i>
+			                        <time datetime="">2017</time>
+			                    </h3>
+			                    <h4>Stage immersif</h4>
+			                    <p><em>w/Red Samuraï  - Saint-Denis </em>
+			                        <br>
+			                        <a href="http://red-samurai.re/" target="_blank">red-samurai.re</a>
+			                    </p>
+			                </div>
+
+			                <div class="col-md-4">
+ 			                	<!--class="img-responsive img-thumbnail center-block hidden-xs hidden-sm"-->
+ 			                    <img class="img-experiences img-responsive img-rounded center-block hidden-xs hidden-sm" src="./images/entité/redsamurai.png" alt="Red Samurai">				                            
+			                </div>				                
+			            </div>
+			                    
+			            <div class="row espace-formation">
+			                <div class="col-md-offset-4 col-md-4">
+			                    <img class="img-experiences img-responsive img-rounded center-block hidden-xs hidden-sm" src="./images/entité/thedictionaryhostel.png" alt="The Dictionary Hostel">
+			                </div>
+
+			                <div class="col-md-4 text-left">
+		                        <h3><i class="fa fa-calendar" style="margin-right:5px;"></i>
+		                            <time datetime="">2016</time>
+		                        </h3>
+		                        <h4>Assistant Manager - Reception</h4>
+		                        <p><em>w/The Distionary Hostel  - East London</em>
+		                        <br>
+		                        <a href="https://thedictionaryhostel.com/en/" target="_blank">thedictionaryhostel.com</a>
+		                    	</p>
+			                </div>				                
+			            </div>
+			                    
+			            <div class="row espace-formation">
+			                <div class="col-md-4 text-right">
+			                    <h3><i class="fa fa-calendar" style="margin-right:5px;"></i>
+			                        <time datetime="">2015</time>
+			                    </h3>
+			                    <h4>Réceptionnist</h4>
+			                        <p><em>w/Palmers Lodge Swiss Cottage  - North London </em>
+			                        	<br>
+		                        		<a href="https://palmerslodges.com/swisscottage/hostel/"" target="_blank">palmerslodges.com</a>
+			                        </p>
+			                </div>
+
+			                <div class="col-md-4">
+			                    <img class="img-experiences img-responsive img-rounded center-block hidden-xs hidden-sm" src="./images/entité/palmerslodge.jpg" alt="Palmers Lodge Swiss Cottage">
+			                </div>				                
+			            </div>
+			                    
+			            <div class="row espace-formation">
+			                <div class="col-md-offset-4 col-md-4">
+			                    <img class="img-experiences img-responsive img-rounded center-block hidden-xs hidden-sm" src="./images/entité/mercure.png" alt="Mercure Créolia">				                            
+			                </div>
+
+		                    <div class="col-md-4 text-left">
+		                        <h3><i class="fa fa-calendar" style="margin-right:5px;"></i>
+		                            <time datetime="">2014 - 2016</time>
+		                        </h3>
+		                        <h4>Responsable Qualité & Développement Durable</h4>
+		                        <p><em>w/Mercure Créolia - Saint-Denis (La Réunion) </em>
+		                            <br><a href="http://www.mercure.com/gb/hotel-1674-hotel-mercure-creolia-saint-denis-la-reunion/index.shtml" target="_blank">mercure.com</a>
+		                        </p>
+		                    </div>				                
+			            </div>
+			                    
+			            <div class="row espace-formation">
+			                <div class="col-md-4 text-right">
+		                        <h3><i class="fa fa-calendar" style="margin-right:5px;"></i>
+		                            <time datetime="">2014</time>
+		                        </h3>
+		                        <h4>Team member : Receptionnist, F&B</h4>
+		                        <p><em>w/YHA London Central</em>
+		                            <br><a href="http://www.yha.org.uk/hostel/london-central" target="_blank">yha.org.uk</a>
+		                        </p>
+		                    </div>
+
+			                <div class="col-md-4">
+			                    <img class="img-experiences img-responsive img-rounded center-block hidden-xs hidden-sm" src="./images/entité/yha.png" alt="YHA London Central">				                            
+			                </div>				                
+			            </div>
+			                    
+			            <div class="row espace-formation">
+			                <div class="col-md-offset-4 col-md-4">
+			                    <img class="img-experiences img-responsive img-rounded center-block hidden-xs hidden-sm" src="./images/entité/radissonblu.png" alt="Radisson Blu">				                            
+			                </div>
+
+		                    <div class="col-md-4 text-left">
+		                        <h3><i class="fa fa-calendar" style="margin-right:5px;"></i>
+		                            <time datetime="">2012</time>
+		                        </h3>
+		                        <h4>Assistante Gouvernante des Lieux Publics</h4>
+		                        <p><em>w/Radisson Blu at Disneyland Paris - Marne-La-Vallée </em>
+		                            <br><a href="https://www.radissonblu.com/fr/golfresort-paris" target="_blank">radissonblu.com</a>
+		                        </p>
+		                    </div>
+		                </div>
+
+						<div class="row espace-formation">
+			                <div class="col-md-4 text-right">
+		                        <h3><i class="fa fa-calendar" style="margin-right:5px;"></i>
+		                            <time datetime="">2011</time>
+		                        </h3>
+		                        <h4>Stage de découvert : Réception - Étages - Restauration - Séminaires & Banquets - Cuisine</h4>
+		                        <p><em>w/Pullman Roissy Charles de Gaulle - Parisr</em>
+<!-- 		                            <br><a href="http://lycee-larenaissance.ac-reunion.fr/" target="_blank">lycee-larenaissance.ac-reunion.fr</a>
+ -->		                        </p>
+		                    </div>
+
+			                <div class="col-md-4">
+			                    <img class="img-experiences img-responsive img-rounded center-block hidden-xs hidden-sm" src="./images/entité/pullman.png" alt="Stage de découverte w/Pullman Roissy Charles De Gaulle">				                            
+			                </div>				                
+			            </div>
+					</div>
+				</div>				
 			</section>
 <hr>
-			<section class="Competences_IT">
+			<section class="Competences_IT" id="competence_it">
 				<div class="container">
 					<div class="container-fluid">
 						<div class="row text-center">
@@ -252,7 +371,7 @@
 				</div>				
 			</section>
 <hr>
-			<section class="portfolio">
+			<section class="portfolio" id="portfolio">
 				<div class="container">
 					<div class="container-fluid">
 						<div class="row text-center">
@@ -274,7 +393,10 @@
 								      <div class="caption">
 								        <h3>The Mountain</h3>
 								        <p>Objectif(s) : intégration w/ "row" & "col"</p>
-								        <p><a href="#" class="btn btn-primary" role="button">HTML5</a> <a href="#" class="btn btn-default" role="button">CSS5</a></p>
+								        <p>
+								        	<a href="#" class="btn btn-danger" type="button" >HTML5</a>
+								        	<a href="#" class="btn btn-primary" type="button" >CSS3</a>
+								        </p>
 								      </div>
 								    </div>
 								</div><!--/.col-xs-6.col-lg-4-->
@@ -287,7 +409,10 @@
 								      <div class="caption">
 										<h3>Ixion</h3>
 								        <p>Objectif(s) : intégration</p>
-								        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+								        <p>
+								        	<a href="#" class="btn btn-danger" type="button" >HTML5</a>
+								        	<a href="#" class="btn btn-primary" type="button" >CSS3</a>
+								        </p>
 								      </div>
 								    </div>
 								</div><!--/.col-xs-6.col-lg-4-->
@@ -300,7 +425,10 @@
 								      <div class="caption">
 										<h3>Site7</h3>
 								        <p>Objectif(s) : intégration</p>
-								        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+								        <p>
+								        	<a href="#" class="btn btn-danger" type="button" >HTML5</a>
+								        	<a href="#" class="btn btn-primary" type="button" >CSS3</a>
+								        </p>
 								      </div>
 								    </div>
 								</div><!--/.col-xs-6.col-lg-4-->
@@ -313,7 +441,10 @@
 								      <div class="caption">
 										<h3>Illdy</h3>
 								        <p>Objectif(s) : intégration w/ Sass</p>
-								        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+								        <p>
+								        	<a href="#" class="btn btn-danger" type="button" >HTML5</a>
+								        	<a href="#" class="btn btn-primary" type="button" >CSS3</a>
+								        </p>
 								      </div>
 								    </div>
 								</div><!--/.col-xs-6.col-lg-4-->
@@ -326,7 +457,10 @@
 								      <div class="caption">
 										<h3>One Million Lines</h3>
 								        <p>Objectif(s) : intégration</p>
-								        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+								        <p>
+								        	<a href="#" class="btn btn-danger" type="button" >HTML5</a>
+								        	<a href="#" class="btn btn-primary" type="button" >CSS3</a>
+								        </p>
 								      </div>
 								    </div>
 								</div><!--/.col-xs-6.col-lg-4-->
@@ -339,7 +473,10 @@
 								      <div class="caption">
 										<h3>Donut Whole</h3>
 								        <p>Objectif(s) : intégration</p>
-								        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+								        <p>
+								        	<a href="#" class="btn btn-danger" type="button" >HTML5</a>
+								        	<a href="#" class="btn btn-primary" type="button" >CSS3</a>
+								        </p>
 								      </div>
 								    </div>
 								</div><!--/.col-xs-6.col-lg-4-->
@@ -350,7 +487,7 @@
 				</div>				
 			</section>
 <hr>
-			<section class="contact">
+			<section class="contact" id="contact">
 				<div class="container">
 					<div class="container-fluid">
 						<div class="row text-center">
