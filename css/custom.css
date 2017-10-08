@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+body{
+	font-family: 'Poiret One', cursive;
+	text-align: center;
+}
+
+img{
+	width: 100%;
+}
+
+hr{
+	height: 1px;
+	background: orange;
+}
+/*HEADER*/
+
+nav ul li{
+	display: inline-block;
+	margin: 20px 10px;
+	font-weight: bold;
+}
+
+/*ABOUT ME*/
+
+/*About me/Jumbotron*/
+
+/*Education*/
+
+/*Expériences*/
+
+/*Competences IT*/
+
+/*PORTFOLIO*/
+
+.img-projet{
+	width: 350px;
+	height: 232.83px;
+ 	overflow-y: auto;
+}
+.caption{
+ text-align: left;
+}
+
+/*Contact*/
+
+/*Footer*/
