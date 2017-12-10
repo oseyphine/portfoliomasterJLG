@@ -1,539 +1,761 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>JLG</title>
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="./css/custom.css">
+  <title>JLG</title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./css/custom.css">
 </head>
+
 <body>
-	<div class="container">
-		<div class="container-fluid">
-			<nav class="navbar navbar-default navbar-fixed-top" id="menu">
-                <div class="container-fluid">
-                    <div class="navbar-header navbar-fix">
-                        <button id="menu-toggle" type="button" class="navbar-toggle collapsed" data-target=".navbar-collapse-1" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <span id="brand" class="navbar-brand visible-xs visible-sm visible-md">HOME</span>
-                    </div>
-                    <!-- Nav desktop -->
-
-                    <div class="collapse navbar-collapse navbar-collapse-1">
-                        <ul class="nav navbar-nav" id="main-menu">
-                            <li class="fond-transparent"><a href="#home"><i class="fa fa-home"></i> HOME</a></li>
-                            <li><a href="#profil"><i class="fa fa-user"></i> ABOUT_ME</a></li>
-                            <li><a href="#educations"><i class="fa fa-graduation-cap"></i> EDUCATIONS</a></li>
-                            <li><a href="#experiences"><i class="fa fa-globe"></i> EXPERIENCES</a></li>
-                            <li><a href="#competence_it"><i class="fa fa-pie-chart"></i> COMPETENCES_IT</a></li>
-                            <li><a href="#portfolio"><i class="fa fa-picture-o"></i> PORTFOLIO</a></li>
-                            <li><a href="#contact"><i class="fa fa-envelope"></i> CONTACT</a></li>
-                                                        </ul>
-                    </div>
-                    <!--  Nav petit écran -->
-                    <div id="sidebar-wrapper" class="visible-xs visible-sm visible-md">
-                        <nav class="navbar-collapse-1">
-                            <ul class="sidebar-nav nav">
-                                <li><a href="#home"><i class="fa fa-home"></i> HOME</a></li>
-                                <li><a href="#profil"><i class="fa fa-user"></i> ABOUT_ME</a></li>
-                                <li><a href="#educations"><i class="fa fa-graduation-cap"></i> EDUCATIONS</a></li>
-                                <li><a href="#experiences"><i class="fa fa-globe"></i> EXPERIENCES</a></li>
-                                <li><a href="#competence_it"><i class="fa fa-pie-chart"></i> COMPETENCES_IT</a></li>
-                                <li><a href="#portfolio"><i class="fa fa-picture-o"></i> PORTFOLIO</a></li>
-                                <li><a href="#contact"><i class="fa fa-envelope"></i> CONTACT</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
+  <div class="container">
+    <div class="container-fluid">
+      <nav class="navbar navbar-default navbar-fixed-top" id="menu" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header navbar-fix">
+            <button id="menu-toggle" type="button" class="navbar-toggle collapsed" data-target=".navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <span id="brand" class="navbar-brand visible-xs visible-sm visible-md">JLG</span>
+          </div>
+          <!-- Nav desktop -->
+          <div class="collapse navbar-collapse navbar-collapse-1">
+            <ul class="nav navbar-nav" id="main-menu">
+              <li class="fond-transparent">
+                <a href="#home">
+                  <i class="fa fa-home"></i> HOME</a>
+              </li>
+              <li>
+                <a href="#profil">
+                  <i class="fa fa-user"></i> ABOUT_ME</a>
+              </li>
+              <li>
+                <a href="#educations">
+                  <i class="fa fa-graduation-cap"></i> EDUCATIONS</a>
+              </li>
+              <li>
+                <a href="#experiences">
+                  <i class="fa fa-globe"></i> EXPERIENCES</a>
+              </li>
+              <li>
+                <a href="#competence_it">
+                  <i class="fa fa-pie-chart"></i> COMPETENCES_IT</a>
+              </li>
+              <li>
+                <a href="#portfolio">
+                  <i class="fa fa-picture-o"></i> PORTFOLIO</a>
+              </li>
+              <li>
+                <a href="#contact">
+                  <i class="fa fa-envelope"></i> CONTACT</a>
+              </li>
+            </ul>
+          </div>
+          <!--  Nav petit écran -->
+          <!-- <div id="sidebar-wrapper" class="visible-xs visible-sm visible-md">
+            <nav class="navbar-collapse-1">
+              <ul class="sidebar-nav nav"> -->
+          <!-- 								<li><a href="#home"><i class="fa fa-home"></i> HOME</a></li>
+								<li><a href="#profil"><i class="fa fa-user"></i> ABOUT_ME</a></li>
+								<li><a href="#educations"><i class="fa fa-graduation-cap"></i> EDUCATIONS</a></li>
+								<li><a href="#experiences"><i class="fa fa-globe"></i> EXPERIENCES</a></li>
+								<li><a href="#competence_it"><i class="fa fa-pie-chart"></i> COMPETENCES_IT</a></li>
+								<li><a href="#portfolio"><i class="fa fa-picture-o"></i> PORTFOLIO</a></li>
+								<li><a href="#contact"><i class="fa fa-envelope"></i> CONTACT</a></li> -->
+          <!-- </ul>
             </nav>
+          </div> -->
         </div>
+      </nav>
     </div>
-			<header id="home">			
-				<div class="jumbotron">
-					<div class="jumbotron-text">
-						<h1>Joséphine LE GLEUT</h1>
-						<p>Apprentie Développeuse Web fullstack JS Jr. | Master Management & Ingénierie du Tourisme </p>
-						<p>Florebo quocumque ferar._Devise de La Réunion </p>
-						<p>Smile Like a Flower - Life philosophy</p>
-						<br/>
-						<p>#GirlinTech #IslandGirl #BusinessWoman #Simplonienne #IAEFRANCE #IAE REUNION #GotoReunion #SLaF</p>
-					</div>
-				</div>							
-			</header>
-<hr>
-			<section class="about_me" id="profil">
-				<div class="container">
-					<div class="container-fluid">
-						<div class="row text-center">
-				            <div class="col-md-12">
-				            	<i class="fa fa-user fa-4x" aria-hidden="true"></i>
-				                <h2>
-				                    <span class="color-primaire chevron">&lt;</span>
-				                    ABOUT ME <span class="color-primaire">/</span><span class="color-primaire chevron">&gt;</span>
-				                </h2>
-				            </div>
-				        </div>
-				        <div class="row">
-			                <div class="col-md-6">
-			                	<img class="img-responsive center-block img-circle avatar" src="./images/photo/joepapaye.jpg" alt="Joe">			                        
-			                </div>
+  </div>
+  <header id="home">
+    <div class="jumbotron">
+      <div class="jumbotron-text">
+        <h1>Joséphine LE GLEUT</h1>
+        <p>Apprentie Développeuse Web fullstack JS Jr. | Master Management & Ingénierie du Tourisme </p>
+        <p>Florebo quocumque ferar._Devise de La Réunion </p>
+        <p>Smile Like a Flower - Life philosophy</p>
+        <br/>
+        <p>#GirlinTech #IslandGirl #BusinessWoman #Simplonienne #IAEFRANCE #IAEREUNION #GotoReunion #SLaF</p>
+      </div>
+    </div>
+  </header>
+  <hr>
+  <section class="about_me" id="profil">
+    <div class="container">
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <i class="fa fa-user fa-4x" aria-hidden="true"></i>
+            <h2>
+              <span class="color-primaire chevron">&lt;</span>
+              ABOUT ME
+              <span class="color-primaire">/</span>
+              <span class="color-primaire chevron">&gt;</span>
+            </h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <img class="img-responsive center-block img-circle avatar" src="./images/photo/joepapaye.jpg" alt="Joe">
+          </div>
 
-			                <div class="col-md-6">
-			                    <p class="text-justify">
-			                    	<p class="MsoNormal text-left">
-			                    		Enchantée, je suis Joséphine LE GLEUT, j'ai 24 ans et j'effectue actuellement une formation de développeuse web fullstack Junior avec <a href="http://simplonreunion.co/formation-informatique/developpeur-web" target="_blank" rel="noopener noreferrer">Simplon Réunion</a>.
-			                    		<br/>
-			                    		<br/>
-										Tourisme, Numérique & Innovation sont mes trois "nouveaux" piliers de choc !
-			                    		<br/>
-			                    		<br/>
-										~avec Environnement, Écologie & Développement Durable bien sûre~
-			                    		<br/>
-			                    		<br/>
-										Autres mots clés/thèmes qui me sont chers : l'auberge de jeunesse dynamique, les évènements (calendrier) et la cartographie !
-			                    		<br/>											
-			                    		Vous êtes chaleureusement invités à consulter mes travaux à la <code>section</code> <a href="#portfolio">PORTFOLIO</a> & à la <code>section</code> <a href="#contact">CONTACT_ME</a> pour me joindre.
-			                    	</p>
-			                    </p>
-			                    <p class="text-center">
-			                    	<a class="btn btn-default cv" href="./images/cv.jpg" target="_blank" role="button"> Mon CV</a>
-			                    </p>
-                			</div>
-            			</div>
-					</div>
-				</div>		
-			</section>
-<hr>
-<!-- 			<section class="educations">
- -->			<section class="espace-bloc" id="educations">
-				    <div class="container" data-wow-duration="0.5s">
-				        <div class="row text-center">
-				            <div class="col-md-12">
-				            	<i class="fa fa-graduation-cap fa-4x" aria-hidden="true"></i>
-				                <h2>
-				                    <span class="color-primaire chevron">&lt;</span>
-				                    DIPLÔMES ET FORMATIONS <span class="color-primaire">/</span><span class="color-primaire chevron">&gt;</span>
-				                </h2>
-				            </div>
-				        </div>
-              
-			            <div class="row espace-formation">
-			                <div class="col-md-4 text-right">
-			                    <h3><i class="fa fa-calendar" style="margin-right:5px;"></i>
-			                        <time datetime="">2017</time>
-			                    </h3>
-			                    <h4>Formation Développeuse Web fullstack JavaScript Junior</h4>
-			                    <p><em>w/Simplon Réunion  - Saint-Denis </em>
-			                        <br>
-			                        <a href="http://simplonreunion.co" target="_blank">simplonreunion.co</a>
-			                    </p>
-			                </div>
+          <div class="col-md-6">
+            <p class="text-justify">
+              <p class="MsoNormal text-left">
+                Enchantée, je prénomme Joséphine, j'ai 24 ans et je suis actuellement une formation de Développeuse Web fullstack Junior
+                avec
+                <a href="http://simplonreunion.co/formation-informatique/developpeur-web" target="_blank" rel="noopener noreferrer">Simplon Réunion</a>.
+                <br/>
+                <br/> Tourisme, Numérique & Innovation sont mes trois "nouveaux" piliers de choc !
+                <br/>
+                <br/> ~avec Environnement, Écologie & Développement Durable bien sûre~
+                <br/>
+                <br/> Autres mots clés/thèmes qui me sont chers : l'auberge de jeunesse dynamique, les évènements (calendrier)
+                et la cartographie !
+                <br/> Vous êtes chaleureusement invités à consulter mes travaux à la
+                <code>section</code>
+                <a href="#portfolio">PORTFOLIO</a> & à la
+                <code>section</code>
+                <a href="#contact">CONTACT_ME</a> pour me joindre.
+              </p>
+            </p>
+            <a href="https://github.com/oseyphine" target="_blank">
+              <i class="fa fa-github-square fa-3x" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/josephine-le-gleut-23090aba/" target="_blank">
+              <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+            </a>
+            <p class="text-center">
+              <a class="btn btn-default cv" href="./images/cv.jpg" target="_blank" role="button"> Mon CV</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section class="espace-bloc" id="educations">
+    <div class="container" data-wow-duration="0.5s">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <i class="fa fa-graduation-cap fa-4x" aria-hidden="true"></i>
+          <h2>
+            <span class="color-primaire chevron">&lt;</span>
+            DIPLÔMES ET FORMATIONS
+            <span class="color-primaire">/</span>
+            <span class="color-primaire chevron">&gt;</span>
+          </h2>
+        </div>
+      </div>
 
-			                <div class="col-md-4">
- 			                	<!--class="img-responsive img-thumbnail center-block hidden-xs hidden-sm"-->
- 			                    <img class="img-education img-responsive img-rounded center-block hidden-xs hidden-sm" src="./images/entité/simplon-reunion.png" alt="Développeur Web Jr. w/ Simplon Réunion">				                            
-			                </div>				                
-			            </div>
-			                    
-			            <div class="row espace-formation">
-			                <div class="col-md-offset-4 col-md-4">
-			                    <img class="img-education img-responsive img-rounded center-block hidden-xs hidden-sm" src="./images/entité/iaereunion.png" alt="Master MIT w/ IAE REUNION">
-			                </div>
+      <div class="row espace-formation">
+        <div class="col-md-4 text-right">
+          <h3>
+            <i class="fa fa-calendar" style="margin-right:5px;"></i>
+            <time datetime="">2017</time>
+          </h3>
+          <h4>Formation Développeuse Web fullstack JavaScript Junior</h4>
+          <p>
+            <em>w/Simplon Réunion - Saint-Denis </em>
+            <br>
+            <a href="http://simplonreunion.co" target="_blank">simplonreunion.co</a>
+          </p>
+        </div>
 
-			                <div class="col-md-4 text-left">
-		                        <h3><i class="fa fa-calendar" style="margin-right:5px;"></i>
-		                            <time datetime="">2016-2014</time>
-		                        </h3>
-		                        <h4>Master : Management et Ingénierire du Tourisme</h4>
-		                        <p><em>w/IAE Réunion  - Saint-Denis</em>
-		                        <br>
-		                        <a href="http://www.iae-reunion.fr/formation_M_MIT_FI.php" target="_blank">iae-reunion.fr</a>
-		                    	</p>
-			                </div>				                
-			            </div>
-			                    
-			            <div class="row espace-formation">
-			                <div class="col-md-4 text-right">
-			                    <h3><i class="fa fa-calendar" style="margin-right:5px;"></i>
-			                        <time datetime="">2014 - 2013</time>
-			                    </h3>
-			                    <h4>Licence 3 : Gestion des Activités Touristiques</h4>
-			                        <p><em>w/IAE Réunion  - Saint-Denis </em>
-			                        	<br>
-		                        		<a href="http://www.iae-reunion.fr/formation_LP_MTL_A.php" target="_blank">iae-reunion.fr</a>
-			                        </p>
-			                </div>
+        <div class="col-md-4">
+          <!--class="img-responsive img-thumbnail center-block hidden-xs hidden-sm"-->
+          <img class="img-education img-responsive img-rounded center-block hidden-xs hidden-sm" src="./images/entité/simplon-reunion.png"
+            alt="Développeur Web Jr. w/ Simplon Réunion">
+        </div>
+      </div>
 
-			                <div class="col-md-4">
-			                    <img class="img-education img-responsive img-rounded center-block hidden-xs hidden-sm" src="./images/entité/iaereunion.png" alt="Licence 3 GAT w/ IAE REUNION">
-			                </div>				                
-			            </div>
-			                    
-			            <div class="row espace-formation">
-			                <div class="col-md-offset-4 col-md-4">
-			                    <img class="img-education img-responsive img-rounded center-block hidden-xs hidden-sm" src="./images/entité/LPHLR.png" alt="Licence 1 - Mathématique Informatique Physique">				                            
-			                </div>
+      <div class="row espace-formation">
+        <div class="col-md-offset-4 col-md-4">
+          <img class="img-education img-responsive img-rounded center-block hidden-xs hidden-sm" src="./images/entité/iaereunion.png"
+            alt="Master MIT w/ IAE REUNION">
+        </div>
 
-		                    <div class="col-md-4 text-left">
-		                        <h3><i class="fa fa-calendar" style="margin-right:5px;"></i>
-		                            <time datetime="">2013 - 2011</time>
-		                        </h3>
-		                        <h4>BTS Hôtellerise-Restauration Option : Mercatique & Gestion hôtellière</h4>
-		                        <p><em>w/Lycée Professionnel Hôtelier «La Renaissance»  - Saint-Paul </em>
-		                            <br><a href="http://lycee-larenaissance.ac-reunion.fr/" target="_blank">lycee-larenaissance.ac-reunion.fr</a>
-		                        </p>
-		                    </div>				                
-			            </div>
-			                    
-			            <div class="row espace-formation">
-			                <div class="col-md-4 text-right">
-		                        <h3><i class="fa fa-calendar" style="margin-right:5px;"></i>
-		                            <time datetime="">2011-2010</time>
-		                        </h3>
-		                        <h4>Mise à Niveau (MAN) en Hôtellerie-Restauration</h4>
-		                        <p><em>w/Lycée Professionnel Hôtelier «La Renaissance»  - Saint-Paul </em>
-		                            <br><a href="http://lycee-larenaissance.ac-reunion.fr/" target="_blank">lycee-larenaissance.ac-reunion.fr</a>
-		                        </p>
-		                    </div>
+        <div class="col-md-4 text-left">
+          <h3>
+            <i class="fa fa-calendar" style="margin-right:5px;"></i>
+            <time datetime="">2016-2014</time>
+          </h3>
+          <h4>Master : Management et Ingénierire du Tourisme</h4>
+          <p>
+            <em>w/IAE Réunion - Saint-Denis</em>
+            <br>
+            <a href="http://www.iae-reunion.fr/formation_M_MIT_FI.php" target="_blank">iae-reunion.fr</a>
+          </p>
+        </div>
+      </div>
 
-			                <div class="col-md-4">
-			                    <img class="img-education img-responsive img-rounded center-block hidden-xs hidden-sm" src="./images/entité/LPHLR.png" alt="Licence 1 - Mathématique Informatique Physique">				                            
-			                </div>				                
-			            </div>
-			                    
-			            <div class="row espace-formation">
-			                <div class="col-md-offset-4 col-md-4">
-			                    <img class="img-education img-responsive img-rounded center-block hidden-xs hidden-sm" src="./images/entité/lyceepossession.jpg" alt="Diplôme National du Brevet">				                            
-			                </div>
+      <div class="row espace-formation">
+        <div class="col-md-4 text-right">
+          <h3>
+            <i class="fa fa-calendar" style="margin-right:5px;"></i>
+            <time datetime="">2014 - 2013</time>
+          </h3>
+          <h4>Licence 3 : Gestion des Activités Touristiques</h4>
+          <p>
+            <em>w/IAE Réunion - Saint-Denis </em>
+            <br>
+            <a href="http://www.iae-reunion.fr/formation_LP_MTL_A.php" target="_blank">iae-reunion.fr</a>
+          </p>
+        </div>
 
-		                    <div class="col-md-4 text-left">
-		                        <h3><i class="fa fa-calendar" style="margin-right:5px;"></i>
-		                            <time datetime="">2010</time>
-		                        </h3>
-		                        <h4>Baccalauréat Général Scientifiques Option : Physique-Chimie Mention européenne allemande</h4>
-		                        <p><em>w/Lycée de La Possession  - La Possession </em>
-		                            <br><a href="http://lycee-lapossession.ac-reunion.fr/" target="_blank">lycee-lapossession.ac-reunion.fr</a>
-		                        </p>
-		                    </div>			                
-			            </div>				        
-				    </div>
-				</section>	
-<!-- 			</section>
- --><hr>
-			<section class="experiences" id="experiences">
-				<div class="container">
-					<div class="container-fluid">
-						<div class="row text-center">
-				        	<div class="col-md-12">
-				            	<i class="fa fa-globe fa-4x" aria-hidden="true"></i>
-				            	<h2>
-				                    <span class="color-primaire chevron">&lt;</span>
-				                    EXPERIENCES <span class="color-primaire">/</span>
-				                    <span class="color-primaire chevron">&gt;</span>
-				                </h2>
-				        	</div>
-				        </div>
-			            <div class="row espace-formation">
-			                <div class="col-md-4 text-right">
-			                    <h3><i class="fa fa-calendar" style="margin-right:5px;"></i>
-			                        <time datetime="">2017</time>
-			                    </h3>
-			                    <h4>Stage immersif</h4>
-			                    <p><em>w/Red Samuraï  - Saint-Denis </em>
-			                        <br>
-			                        <a href="http://red-samurai.re/" target="_blank">red-samurai.re</a>
-			                    </p>
-			                </div>
+        <div class="col-md-4">
+          <img class="img-education img-responsive img-rounded center-block hidden-xs hidden-sm" src="./images/entité/iaereunion.png"
+            alt="Licence 3 GAT w/ IAE REUNION">
+        </div>
+      </div>
 
-			                <div class="col-md-4">
- 			                	<!--class="img-responsive img-thumbnail center-block hidden-xs hidden-sm"-->
- 			                    <img class="img-experiences img-responsive img-rounded center-block hidden-xs hidden-sm" src="./images/entité/redsamurai.png" alt="Red Samurai">				                            
-			                </div>				                
-			            </div>
-			                    
-			            <div class="row espace-formation">
-			                <div class="col-md-offset-4 col-md-4">
-			                    <img class="img-experiences img-responsive img-rounded center-block hidden-xs hidden-sm" src="./images/entité/thedictionaryhostel.png" alt="The Dictionary Hostel">
-			                </div>
+      <div class="row espace-formation">
+        <div class="col-md-offset-4 col-md-4">
+          <img class="img-education img-responsive img-rounded center-block hidden-xs hidden-sm" src="./images/entité/LPHLR.png" alt="Licence 1 - Mathématique Informatique Physique">
+        </div>
 
-			                <div class="col-md-4 text-left">
-		                        <h3><i class="fa fa-calendar" style="margin-right:5px;"></i>
-		                            <time datetime="">2016</time>
-		                        </h3>
-		                        <h4>Assistant Manager - Reception</h4>
-		                        <p><em>w/The Distionary Hostel  - East London</em>
-		                        <br>
-		                        <a href="https://thedictionaryhostel.com/en/" target="_blank">thedictionaryhostel.com</a>
-		                    	</p>
-			                </div>				                
-			            </div>
-			                    
-			            <div class="row espace-formation">
-			                <div class="col-md-4 text-right">
-			                    <h3><i class="fa fa-calendar" style="margin-right:5px;"></i>
-			                        <time datetime="">2015</time>
-			                    </h3>
-			                    <h4>Réceptionnist</h4>
-			                        <p><em>w/Palmers Lodge Swiss Cottage  - North London </em>
-			                        	<br>
-		                        		<a href="https://palmerslodges.com/swisscottage/hostel/"" target="_blank">palmerslodges.com</a>
-			                        </p>
-			                </div>
+        <div class="col-md-4 text-left">
+          <h3>
+            <i class="fa fa-calendar" style="margin-right:5px;"></i>
+            <time datetime="">2013 - 2011</time>
+          </h3>
+          <h4>BTS Hôtellerise-Restauration Option : Mercatique & Gestion hôtellière</h4>
+          <p>
+            <em>w/Lycée Professionnel Hôtelier «La Renaissance» - Saint-Paul </em>
+            <br>
+            <a href="http://lycee-larenaissance.ac-reunion.fr/" target="_blank">lycee-larenaissance.ac-reunion.fr</a>
+          </p>
+        </div>
+      </div>
 
-			                <div class="col-md-4">
-			                    <img class="img-experiences img-responsive img-rounded center-block hidden-xs hidden-sm" src="./images/entité/palmerslodge.jpg" alt="Palmers Lodge Swiss Cottage">
-			                </div>				                
-			            </div>
-			                    
-			            <div class="row espace-formation">
-			                <div class="col-md-offset-4 col-md-4">
-			                    <img class="img-experiences img-responsive img-rounded center-block hidden-xs hidden-sm" src="./images/entité/mercure.png" alt="Mercure Créolia">				                            
-			                </div>
+      <div class="row espace-formation">
+        <div class="col-md-4 text-right">
+          <h3>
+            <i class="fa fa-calendar" style="margin-right:5px;"></i>
+            <time datetime="">2011-2010</time>
+          </h3>
+          <h4>Mise à Niveau (MAN) en Hôtellerie-Restauration</h4>
+          <p>
+            <em>w/Lycée Professionnel Hôtelier «La Renaissance» - Saint-Paul </em>
+            <br>
+            <a href="http://lycee-larenaissance.ac-reunion.fr/" target="_blank">lycee-larenaissance.ac-reunion.fr</a>
+          </p>
+        </div>
 
-		                    <div class="col-md-4 text-left">
-		                        <h3><i class="fa fa-calendar" style="margin-right:5px;"></i>
-		                            <time datetime="">2014 - 2016</time>
-		                        </h3>
-		                        <h4>Responsable Qualité & Développement Durable</h4>
-		                        <p><em>w/Mercure Créolia - Saint-Denis (La Réunion) </em>
-		                            <br><a href="http://www.mercure.com/gb/hotel-1674-hotel-mercure-creolia-saint-denis-la-reunion/index.shtml" target="_blank">mercure.com</a>
-		                        </p>
-		                    </div>				                
-			            </div>
-			                    
-			            <div class="row espace-formation">
-			                <div class="col-md-4 text-right">
-		                        <h3><i class="fa fa-calendar" style="margin-right:5px;"></i>
-		                            <time datetime="">2014</time>
-		                        </h3>
-		                        <h4>Team member : Receptionnist, F&B</h4>
-		                        <p><em>w/YHA London Central</em>
-		                            <br><a href="http://www.yha.org.uk/hostel/london-central" target="_blank">yha.org.uk</a>
-		                        </p>
-		                    </div>
+        <div class="col-md-4">
+          <img class="img-education img-responsive img-rounded center-block hidden-xs hidden-sm" src="./images/entité/LPHLR.png" alt="Licence 1 - Mathématique Informatique Physique">
+        </div>
+      </div>
 
-			                <div class="col-md-4">
-			                    <img class="img-experiences img-responsive img-rounded center-block hidden-xs hidden-sm" src="./images/entité/yha.png" alt="YHA London Central">				                            
-			                </div>				                
-			            </div>
-			                    
-			            <div class="row espace-formation">
-			                <div class="col-md-offset-4 col-md-4">
-			                    <img class="img-experiences img-responsive img-rounded center-block hidden-xs hidden-sm" src="./images/entité/radissonblu.png" alt="Radisson Blu">				                            
-			                </div>
+      <div class="row espace-formation">
+        <div class="col-md-offset-4 col-md-4">
+          <img class="img-education img-responsive img-rounded center-block hidden-xs hidden-sm" src="./images/entité/lyceepossession.jpg"
+            alt="Diplôme National du Brevet">
+        </div>
 
-		                    <div class="col-md-4 text-left">
-		                        <h3><i class="fa fa-calendar" style="margin-right:5px;"></i>
-		                            <time datetime="">2012</time>
-		                        </h3>
-		                        <h4>Assistante Gouvernante des Lieux Publics</h4>
-		                        <p><em>w/Radisson Blu at Disneyland Paris - Marne-La-Vallée </em>
-		                            <br><a href="https://www.radissonblu.com/fr/golfresort-paris" target="_blank">radissonblu.com</a>
-		                        </p>
-		                    </div>
-		                </div>
+        <div class="col-md-4 text-left">
+          <h3>
+            <i class="fa fa-calendar" style="margin-right:5px;"></i>
+            <time datetime="">2010</time>
+          </h3>
+          <h4>Baccalauréat Général Scientifiques Option : Physique-Chimie Mention européenne allemande</h4>
+          <p>
+            <em>w/Lycée de La Possession - La Possession </em>
+            <br>
+            <a href="http://lycee-lapossession.ac-reunion.fr/" target="_blank">lycee-lapossession.ac-reunion.fr</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- RETOUR HOME -->
+  <a href="#home">
+    <div id="returnTop">
+      <i class="fa fa-arrow-up fa-1x" aria-hidden="true"></i>
+      HOME
+      <i class="fa fa-arrow-up fa-1x" aria-hidden="true"></i>
+    </div>
+  </a>
+  <!-- FIN RETOUR HOME -->
+  <hr>
+  <section class="experiences" id="experiences">
+    <div class="container">
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <i class="fa fa-globe fa-4x" aria-hidden="true"></i>
+            <h2>
+              <span class="color-primaire chevron">&lt;</span>
+              EXPERIENCES
+              <span class="color-primaire">/</span>
+              <span class="color-primaire chevron">&gt;</span>
+            </h2>
+          </div>
+        </div>
+        <div class="row espace-formation">
+          <div class="col-md-4 text-right">
+            <h3>
+              <i class="fa fa-calendar" style="margin-right:5px;"></i>
+              <time datetime="">2017</time>
+            </h3>
+            <h4>Stage immersif</h4>
+            <p>
+              <em>w/Red Samuraï - Saint-Denis </em>
+              <br>
+              <a href="http://red-samurai.re/" target="_blank">red-samurai.re</a>
+            </p>
+          </div>
 
-						<div class="row espace-formation">
-			                <div class="col-md-4 text-right">
-		                        <h3><i class="fa fa-calendar" style="margin-right:5px;"></i>
-		                            <time datetime="">2011</time>
-		                        </h3>
-		                        <h4>Stage de découvert : Réception - Étages - Restauration - Séminaires & Banquets - Cuisine</h4>
-		                        <p><em>w/Pullman Roissy Charles de Gaulle - Parisr</em>
-<!-- 		                            <br><a href="http://lycee-larenaissance.ac-reunion.fr/" target="_blank">lycee-larenaissance.ac-reunion.fr</a>
- -->		                        </p>
-		                    </div>
+          <div class="col-md-4">
+            <img class="img-experiences img-responsive img-rounded center-block hidden-xs hidden-sm" src="./images/entité/redsamurai.png"
+              alt="Red Samurai">
+          </div>
+        </div>
 
-			                <div class="col-md-4">
-			                    <img class="img-experiences img-responsive img-rounded center-block hidden-xs hidden-sm" src="./images/entité/pullman.png" alt="Stage de découverte w/Pullman Roissy Charles De Gaulle">				                            
-			                </div>				                
-			            </div>
-					</div>
-				</div>				
-			</section>
-<hr>
-			<section class="Competences_IT" id="competence_it">
-				<div class="container">
-					<div class="container-fluid">
-						<div class="row text-center">
-				            <div class="col-md-12">
-				            	<i class="fa fa-pie-chart fa-4x" aria-hidden="true"></i>
-				                <h2>
-				                    <span class="color-primaire chevron">&lt;</span>
-				                    COMPETENCES_IT <span class="color-primaire">/</span><span class="color-primaire chevron">&gt;</span>
-				                </h2>
-				            </div>
-				        </div>						
-					</div>
-				</div>				
-			</section>
-<hr>
-			<section class="portfolio" id="portfolio">
-				<div class="container">
-					<div class="container-fluid">
-						<div class="row text-center">
-				            <div class="col-md-12">
-				            	<i class="fa fa-picture-o fa-4x" aria-hidden="true"></i>
-				                <h2>
-				                    <span class="color-primaire chevron">&lt;</span>
-				                    PORTFOLIO <span class="color-primaire">/</span><span class="color-primaire chevron">&gt;</span>
-				                </h2>
-				            </div>
-				        </div>
-						<div class="row row-offcanvas row-offcanvas-right">
-							<div class="row">
-								<div class="col-xs-6 col-lg-4">
-									<div class="thumbnail">
-										<div class="img-projet">
-								      		<img src="./images/exercices/intégration/the-mountain.jpg" alt="The Mountain">										
-										</div>
-								      <div class="caption">
-								        <h3>The Mountain</h3>
-								        <p>Objectif(s) : intégration w/ "row" & "col"</p>
-								        <p>
-								        	<a href="#" class="btn btn-danger" type="button" >HTML5</a>
-								        	<a href="#" class="btn btn-primary" type="button" >CSS3</a>
-								        </p>
-								      </div>
-								    </div>
-								</div><!--/.col-xs-6.col-lg-4-->
+        <div class="row espace-formation">
+          <div class="col-md-offset-4 col-md-4">
+            <img class="img-experiences img-responsive img-rounded center-block hidden-xs hidden-sm dictionary" src="./images/entité/thedictionaryhostel.png"
+              alt="The Dictionary Hostel">
+          </div>
 
-								<div class="col-xs-6 col-lg-4">
-									<div class="thumbnail">
-										<div class="img-projet">
-								      		<img src="./images/exercices/intégration/ixion.png" alt="Ixion">
-								      	</div>
-								      <div class="caption">
-										<h3>Ixion</h3>
-								        <p>Objectif(s) : intégration</p>
-								        <p>
-								        	<a href="#" class="btn btn-danger" type="button" >HTML5</a>
-								        	<a href="#" class="btn btn-primary" type="button" >CSS3</a>
-								        </p>
-								      </div>
-								    </div>
-								</div><!--/.col-xs-6.col-lg-4-->
+          <div class="col-md-4 text-left">
+            <h3>
+              <i class="fa fa-calendar" style="margin-right:5px;"></i>
+              <time datetime="">2016</time>
+            </h3>
+            <h4>Assistant Manager - Reception</h4>
+            <p>
+              <em>w/The Distionary Hostel - East London</em>
+              <br>
+              <a href="https://thedictionaryhostel.com/en/" target="_blank">thedictionaryhostel.com</a>
+            </p>
+          </div>
+        </div>
 
-								<div class="col-xs-6 col-lg-4">
-									<div class="thumbnail">
-										<div class="img-projet">
-								      		<img src="./images/exercices/intégration/site7.jpg" alt="Site7">
-								      	</div>
-								      <div class="caption">
-										<h3>Site7</h3>
-								        <p>Objectif(s) : intégration</p>
-								        <p>
-								        	<a href="#" class="btn btn-danger" type="button" >HTML5</a>
-								        	<a href="#" class="btn btn-primary" type="button" >CSS3</a>
-								        </p>
-								      </div>
-								    </div>
-								</div><!--/.col-xs-6.col-lg-4-->
+        <div class="row espace-formation">
+          <div class="col-md-4 text-right">
+            <h3>
+              <i class="fa fa-calendar" style="margin-right:5px;"></i>
+              <time datetime="">2015</time>
+            </h3>
+            <h4>Réceptionnist</h4>
+            <p>
+              <em>w/Palmers Lodge Swiss Cottage - North London </em>
+              <br>
+              <a href="https://palmerslodges.com/swisscottage/hostel/" target="_blank ">palmerslodges.com</a>
+            </p>
+          </div>
 
-								<div class="col-xs-6 col-lg-4">
-									<div class="thumbnail">
-										<div class="img-projet">
-								      		<img src="./images/exercices/intégration/illdy.png" alt="Illdy">
-								      	</div>
-								      <div class="caption">
-										<h3>Illdy</h3>
-								        <p>Objectif(s) : intégration w/ Sass</p>
-								        <p>
-								        	<a href="#" class="btn btn-danger" type="button" >HTML5</a>
-								        	<a href="#" class="btn btn-primary" type="button" >CSS3</a>
-								        </p>
-								      </div>
-								    </div>
-								</div><!--/.col-xs-6.col-lg-4-->
+          <div class="col-md-4 ">
+            <img class="img-experiences img-responsive img-rounded center-block hidden-xs hidden-sm " src="./images/entité/palmerslodge.jpg"
+              alt="Palmers Lodge Swiss Cottage ">
+          </div>
+        </div>
 
-								<div class="col-xs-6 col-lg-4">
-									<div class="thumbnail">
-										<div class="img-projet">
-								      		<img src="./images/exercices/intégration/one-million-lines.png" alt="One Million Lines">
-								  		</div>
-								      <div class="caption">
-										<h3>One Million Lines</h3>
-								        <p>Objectif(s) : intégration</p>
-								        <p>
-								        	<a href="#" class="btn btn-danger" type="button" >HTML5</a>
-								        	<a href="#" class="btn btn-primary" type="button" >CSS3</a>
-								        </p>
-								      </div>
-								    </div>
-								</div><!--/.col-xs-6.col-lg-4-->
+        <div class="row espace-formation ">
+          <div class="col-md-offset-4 col-md-4 ">
+            <img class="img-experiences img-responsive img-rounded center-block hidden-xs hidden-sm " src="./images/entité/mercure.png
+                " alt="Mercure Créolia ">
+          </div>
 
-								<div class="col-xs-6 col-lg-4">
-									<div class="thumbnail">
-										<div class="img-projet">
-								      		<img src="./images/exercices/intégration/donut.png" alt="Donut Whole">
-								      	</div>
-								      <div class="caption">
-										<h3>Donut Whole</h3>
-								        <p>Objectif(s) : intégration</p>
-								        <p>
-								        	<a href="#" class="btn btn-danger" type="button" >HTML5</a>
-								        	<a href="#" class="btn btn-primary" type="button" >CSS3</a>
-								        </p>
-								      </div>
-								    </div>
-								</div><!--/.col-xs-6.col-lg-4-->
+          <div class="col-md-4 text-left ">
+            <h3>
+              <i class="fa fa-calendar " style="margin-right:5px; "></i>
+              <time datetime=" ">2014 - 2016</time>
+            </h3>
+            <h4>Responsable Qualité & Développement Durable</h4>
+            <p>
+              <em>w/Mercure Créolia - Saint-Denis (La Réunion) </em>
+              <br>
+              <a href="http://www.mercure.com/gb/hotel-1674-hotel-mercure-creolia-saint-denis-la-reunion/index.shtml
+                " target="_blank ">mercure.com</a>
+            </p>
+          </div>
+        </div>
 
-							</div><!--/row-->	
-						</div>				
-					</div>
-				</div>				
-			</section>
-<hr>
-			<section class="contact" id="contact">
-				<div class="container">
-					<div class="container-fluid">
-						<div class="row text-center">
-				            <div class="col-md-12">
-				            	<i class="fa fa-envelope fa-4x" aria-hidden="true"></i>
-				                <h2>
-				                    <span class="color-primaire chevron">&lt;</span>
-				                    CONTACT_ME <span class="color-primaire">/</span><span class="color-primaire chevron">&gt;</span>
-				                </h2>
-				            </div>
-				        </div>
-						<div class="row">
-				            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-3">
-				                <form id="contact-form" class="form" action="#" method="POST" role="form">
-				                    <div class="form-group">
-				                        <input type="text" class="form-control" id="name" name="name" placeholder="Entrez votre Prénom & Nom" tabindex="1" required>
-				                    </div>
-				                    <div class="form-group">
-				                        <input type="email" class="form-control" id="email" name="email" placeholder="Entrez votre Email" tabindex="2" required>
-				                    </div>
-				                    <div class="form-group">
-				                        <input type="text" class="form-control" id="subject" name="subject" placeholder="De quoi s'agit-il ?" tabindex="3" required>
-				                    </div>
-				                    <div class="form-group">
-				                        <textarea rows="5" cols="50" name="message" class="form-control" id="message" placeholder="Entrez votre message..." tabindex="4" required></textarea>
-				                    </div>
-				                    <div class="text-center">
-				                        <a href="mailto:josephine.legleut@gmail.com" class="btn btn-start-order">Envoyer</a>
-				                    </div>
-				                </form>
-				            </div>
-				        </div>
-				    </div>			
-					</div>
-				</div>				
-			</section>
-<hr>
-			<footer>
-				<p>by_OseyPhine | 2017</p>
-			</footer>
-		</div>
-	</div>
+        <div class="row espace-formation ">
+          <div class="col-md-4 text-right ">
+            <h3>
+              <i class="fa fa-calendar " style="margin-right:5px; "></i>
+              <time datetime=" ">2014</time>
+            </h3>
+            <h4>Team member : Receptionnist, F&B</h4>
+            <p>
+              <em>w/YHA London Central</em>
+              <br>
+              <a href="http://www.yha.org.uk/hostel/london-central " target="_blank ">yha.org.uk</a>
+            </p>
+          </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script type="text/javascript" href="./js/script.js"></script>
+          <div class="col-md-4 ">
+            <img class="img-experiences img-responsive img-rounded center-block hidden-xs hidden-sm " src="./images/entité/yha.png
+                " alt="YHA London Central ">
+          </div>
+        </div>
+
+        <div class="row espace-formation ">
+          <div class="col-md-offset-4 col-md-4 ">
+            <img class="img-experiences img-responsive img-rounded center-block hidden-xs hidden-sm " src="./images/entité/radissonblu.png
+                " alt="Radisson Blu ">
+          </div>
+
+          <div class="col-md-4 text-left ">
+            <h3>
+              <i class="fa fa-calendar " style="margin-right:5px; "></i>
+              <time datetime=" ">2012</time>
+            </h3>
+            <h4>Assistante Gouvernante des Lieux Publics</h4>
+            <p>
+              <em>w/Radisson Blu at Disneyland Paris - Marne-La-Vallée </em>
+              <br>
+              <a href="https://www.radissonblu.com/fr/golfresort-paris " target="_blank ">radissonblu.com</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="row espace-formation ">
+          <div class="col-md-4 text-right ">
+            <h3>
+              <i class="fa fa-calendar " style="margin-right:5px; "></i>
+              <time datetime=" ">2011</time>
+            </h3>
+            <h4>Stage de découvert : Réception - Étages - Restauration - Séminaires & Banquets - Cuisine</h4>
+            <p>
+              <em>w/Pullman Roissy Charles de Gaulle - Parisr</em>
+              <!--<br><a href="http://lycee-larenaissance.ac-reunion.fr/ " target="_blank ">lycee-larenaissance.ac-reunion.fr</a>-->
+            </p>
+          </div>
+
+          <div class="col-md-4 ">
+            <img class="img-experiences img-responsive img-rounded center-block hidden-xs hidden-sm " src="./images/entité/pullman.png
+                " alt="Stage de découverte w/Pullman Roissy Charles De Gaulle ">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- RETOUR HOME -->
+  <a href="#home ">
+    <div id="returnTop ">
+      <i class="fa fa-arrow-up fa-1x " aria-hidden="true "></i>
+      HOME
+      <i class="fa fa-arrow-up fa-1x " aria-hidden="true "></i>
+    </div>
+  </a>
+  <!-- FIN RETOUR HOME -->
+  <hr>
+  <section class="Competences_IT " id="competence_it ">
+    <div class="container ">
+      <div class="container-fluid ">
+        <div class="row text-center ">
+          <div class="col-md-12 ">
+            <i class="fa fa-pie-chart fa-4x " aria-hidden="true "></i>
+            <h2>
+              <span class="color-primaire chevron ">&lt;</span>
+              COMPETENCES_IT
+              <span class="color-primaire ">/</span>
+              <span class="color-primaire chevron ">&gt;</span>
+            </h2>
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col-sm-12 col-md-4 ">
+            <div class="thumbnail ">
+              <img src="images/competences/htmljscss.png" alt="HTML JS CSS">
+              <div class="caption ">
+                <h3>LANGUAGES</h3>
+                <p>HTML5 | CSS3 | JS</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-4 ">
+            <div class="thumbnail ">
+              <div class="row">
+                <div class="col-xs-12">
+                  <img class="img-competences" src="images/competences/nodejs.png" alt="Node JS">
+                  <img class="img-competences" src="images/competences/mongodb.png" alt="Mongo DB">
+                  <img class="img-competences" src="images/competences/mysql.png" alt="MySQL">
+                </div>
+                <div class="col-xs-12">
+                  <img class="img-competences" src="images/competences/react.png" alt="React">
+                  <img class="img-competences" src="images/competences/jquery.gif" alt="jQuery">
+                  <img class="img-competences" src="images/competences/bootstrap.png" alt="Bootstrap">
+                </div>
+                <div class="col-xs-12">
+                  <img class="img-competences" src="images/competences/googleapijs.png" alt="Google API JS">
+                  <img class="img-competences" src="images/competences/leaflet.png" alt="Leaflet JS">
+                </div>
+              </div>
+              <div class="caption ">
+                <h3>FRAMEWORKS</h3>
+                <p>Node JS | MongoDB | MySQL | jQuery | Bootstrap | Google API JS | Leaflet | Drupal</p>
+                <!--<p><a href="# " class="btn btn-primary " role="button ">Button</a> <a href="# " class="btn btn-default
+                " role="button ">Button</a></p>-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-4 ">
+            <div class="thumbnail ">
+                <i class="fa fa-laptop fa-5x " aria-hidden="true "></i>
+                <div class="caption ">
+                <h3>AUTRES</h3>
+                <p>Logiciels de création</p>
+                <p>Package Adobe : Photoshop | Illustrator | InDesign</p>
+                <p>Système d'exploitation</p>
+                <p>Mac OS | Linux | Windows</p>
+                <!--<p><a href="# " class="btn btn-primary " role="button ">Button</a> <a href="# " class="btn btn-default
+                " role="button ">Button</a></p>-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- RETOUR HOME -->
+  <a href="#home ">
+    <div id="returnTop ">
+      <i class="fa fa-arrow-up fa-1x " aria-hidden="true "></i>
+      HOME
+      <i class="fa fa-arrow-up fa-1x " aria-hidden="true "></i>
+    </div>
+  </a>
+  <!-- FIN RETOUR HOME -->
+  <hr>
+  <section class="portfolio " id="portfolio ">
+    <div class="container ">
+      <div class="container-fluid ">
+        <div class="row text-center ">
+          <div class="col-md-12 ">
+            <i class="fa fa-picture-o fa-4x " aria-hidden="true "></i>
+            <h2>
+              <span class="color-primaire chevron ">&lt;</span>
+              PORTFOLIO
+              <span class="color-primaire ">/</span>
+              <span class="color-primaire chevron ">&gt;</span>
+            </h2>
+          </div>
+        </div>
+        <div class="row row-offcanvas row-offcanvas-right ">
+          <div class="row ">
+            <div class="col-xs-6 col-lg-4 ">
+              <div class="thumbnail ">
+                <div class="img-projet ">
+                  <img src="./images/exercices/intégration/the-mountain.jpg " alt="The Mountain ">
+                </div>
+                <div class="caption ">
+                  <div class="title-porject ">
+                    <h3>The Mountain</h3>
+                    <a href="https://github.com/oseyphine/the-mountain " target="_blank ">
+                      <i class="fa fa-github-square fa-2x
+                " aria-hidden="true "></i>
+                    </a>
+                  </div>
+                  <p>Objectif(s) : intégration w/ "row " & "col "</p>
+                  <p>
+                    <a href="# " class="btn btn-danger " type="button ">HTML5</a>
+                    <a href="# " class="btn btn-primary " type="button ">CSS3</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--/.col-xs-6.col-lg-4-->
+
+            <div class="col-xs-6 col-lg-4 ">
+              <div class="thumbnail ">
+                <div class="img-projet ">
+                  <img src="./images/exercices/intégration/ixion.png " alt="Ixion ">
+                </div>
+                <div class="caption ">
+                  <div class="title-porject ">
+                    <h3>Ixion</h3>
+                    <a href="https://github.com/oseyphine/ixion " target="_blank ">
+                      <i class="fa fa-github-square fa-2x
+                " aria-hidden="true "></i>
+                    </a>
+                  </div>
+                  <p>Objectif(s) : intégration</p>
+                  <p>
+                    <a href="# " class="btn btn-danger " type="button ">HTML5</a>
+                    <a href="# " class="btn btn-primary " type="button ">CSS3</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--/.col-xs-6.col-lg-4-->
+
+            <div class="col-xs-6 col-lg-4 ">
+              <div class="thumbnail ">
+                <div class="img-projet ">
+                  <img src="./images/exercices/intégration/site7.jpg " alt="Site7 ">
+                </div>
+                <div class="caption ">
+                  <div class="title-porject ">
+                    <h3>Site7</h3>
+                    <a href="https://github.com/oseyphine/site7 " target="_blank ">
+                      <i class="fa fa-github-square fa-2x
+                " aria-hidden="true "></i>
+                    </a>
+                  </div>
+                  <p>Objectif(s) : intégration</p>
+                  <p>
+                    <a href="# " class="btn btn-danger " type="button ">HTML5</a>
+                    <a href="# " class="btn btn-primary " type="button ">CSS3</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--/.col-xs-6.col-lg-4-->
+
+            <div class="col-xs-6 col-lg-4 ">
+              <div class="thumbnail ">
+                <div class="img-projet ">
+                  <img src="./images/exercices/intégration/illdy.png " alt="Illdy ">
+                </div>
+                <div class="caption ">
+                  <div class="title-porject ">
+                    <h3>Illdy</h3>
+                    <a href="https://github.com/oseyphine/illdy-sass " target="_blank ">
+                      <i class="fa fa-github-square fa-2x
+                " aria-hidden="true "></i>
+                    </a>
+                  </div>
+                  <p>Objectif(s) : intégration w/ Sass</p>
+                  <p>
+                    <a href="# " class="btn btn-danger " type="button ">HTML5</a>
+                    <a href="# " class="btn btn-primary " type="button ">CSS3</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--/.col-xs-6.col-lg-4-->
+
+            <div class="col-xs-6 col-lg-4 ">
+              <div class="thumbnail ">
+                <div class="img-projet ">
+                  <img src="./images/exercices/intégration/one-million-lines.png " alt="One Million Lines ">
+                </div>
+                <div class="caption ">
+                  <div class="title-porject ">
+                    <h3>One Million Lines</h3>
+                    <a href="https://github.com/oseyphine/html-css-exercice-one-million-lines " target="_blank ">
+                      <i class="fa fa-github-square
+                fa-2x " aria-hidden="true "></i>
+                    </a>
+                  </div>
+                  <p>Objectif(s) : intégration</p>
+                  <p>
+                    <a href="# " class="btn btn-danger " type="button ">HTML5</a>
+                    <a href="# " class="btn btn-primary " type="button ">CSS3</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--/.col-xs-6.col-lg-4-->
+
+            <div class="col-xs-6 col-lg-4 ">
+              <div class="thumbnail ">
+                <div class="img-projet ">
+                  <img src="./images/exercices/intégration/donut.png " alt="Donut Whole ">
+                </div>
+                <div class="caption ">
+                  <div class="title-porject ">
+                    <h3>Donut Whole</h3>
+                    <a href="https://github.com/oseyphine/Donuts " target="_blank ">
+                      <i class="fa fa-github-square fa-2x
+                " aria-hidden="true "></i>
+                    </a>
+                  </div>
+                  <p>Objectif(s) : intégration</p>
+                  <p>
+                    <a href="# " class="btn btn-danger " type="button ">HTML5</a>
+                    <a href="# " class="btn btn-primary " type="button ">CSS3</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--/.col-xs-6.col-lg-4-->
+
+          </div>
+          <!--/row-->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- RETOUR HOME -->
+  <a href="#home ">
+    <div id="returnTop ">
+      <i class="fa fa-arrow-up fa-1x " aria-hidden="true "></i>
+      HOME
+      <i class="fa fa-arrow-up fa-1x " aria-hidden="true "></i>
+    </div>
+  </a>
+  <!-- FIN RETOUR HOME -->
+  <hr>
+  <section class="contact " id="contact ">
+    <div class="container ">
+      <div class="container-fluid ">
+        <div class="row text-center ">
+          <div class="col-md-12 ">
+            <i class="fa fa-envelope fa-4x " aria-hidden="true "></i>
+            <h2>
+              <span class="color-primaire chevron ">&lt;</span>
+              CONTACT_ME
+              <span class="color-primaire ">/</span>
+              <span class="color-primaire chevron ">&gt;</span>
+            </h2>
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-3 ">
+            <div class="text-center">
+              <a href="mailto:josephine.legleut@gmail.com" class="btn btn-start-order" role="button">
+                <button type="button" class="btn-danger">M'envoyer un email</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- RETOUR HOME -->
+  <a href="#home">
+    <div id="returnTop">
+      <i class="fa fa-arrow-up fa-1x" aria-hidden="true"></i>
+      HOME
+      <i class="fa fa-arrow-up fa-1x" aria-hidden="true"></i>
+    </div>
+  </a>
+  <!-- FIN RETOUR HOME -->
+  <hr>
+  <footer>
+    <a href="https://github.com/oseyphine" target="_blank">
+      <i class="fa fa-github-square fa-3x" aria-hidden="true"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/josephine-le-gleut-23090aba/" target="_blank">
+      <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+    </a>
+    <p>by_
+      <b>OseyPhine</b> | 2017</p>
+  </footer>
+  </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" href="./js/script.js"></script>
+</body>
 
 </html>

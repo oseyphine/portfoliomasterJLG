@@ -9,28 +9,58 @@ img{
 	width: 100%;
 }
 
+section{
+	margin: 30px auto;
+}
+
+.fa{
+	color: orange;
+}
+
 hr{
 	height: 1px;
 	background: orange;
+	margin: 0px;
 }
+
 .color-primaire{
 	color: orange;
 }
+
+/* Back to top*/
+#returnTop{
+	color: white;
+	background-color: orange;
+	height: 30px;
+	padding-top: 5px;
+}
+
+#returnTop .fa{
+	color: white;
+	margin: auto 5px;
+}
+
+/*NAV*/
 .navbar{
 	background: white;
     filter: opacity(85%);
 	border: transparent solid 1px;
 }
-nav ul li a{
-	margin: 20px 10px;
-	color: pink;
-
+.navbar:hover{
+	background: white;
+    filter: opacity(100%);
+	border: transparent solid 1px;
 }
+nav ul li a{
+/*	margin: 20px 10px;
+*/}
 .navbar-default .navbar-nav>li>a{
 	color: orange;
 	font-weight: bold;
+	margin: 20px 10px;
 }
 /*HEADER*/
+
 /*JUMBOTRON*/
 .jumbotron{
 	color: white;
@@ -51,13 +81,17 @@ nav ul li a{
 /*Education*/
 .img-education{
 	width: 200px;
+	margin: 35px auto;
 }
 /*Expériences*/
 .img-experiences{
 	width: 150px;
-	margin-top: 40px;
+	margin: 20px auto;
 }
 /*Competences IT*/
+.img-competences{
+	width: 80px !important;
+}
 
 /*PORTFOLIO*/
 
@@ -66,10 +100,51 @@ nav ul li a{
 	height: 232.83px;
  	overflow-y: auto;
 }
+
 .caption{
  text-align: left;
+}
+
+.title-porject{
+	display: flex;
+}
+
+.title-porject .fa{
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.dictionary{
+	background: black;
+	padding: 15px;
 }
 
 /*Contact*/
 
 /*Footer*/
+footer{
+	background: #ccc;
+	height: 100%;
+	color: white;
+}
+
+footer .fa{
+	margin: 50px 10px;
+}
+
+@media (max-width: 1024px) {
+    .jumbotron{
+        margin-top: 50px;
+	}
+	
+	#brand{
+		margin-top: 20px;
+		margin-bottom: 20px;
+		
+	}
+
+	.navbar-nav li a{
+		margin-right: 0px !important;
+		margin-left: 0px !important;
+	}
+}
